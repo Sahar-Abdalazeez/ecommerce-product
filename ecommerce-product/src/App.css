@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   border-width: 0px;
+  box-sizing: border-box;
 }
 button {
   outline: none;

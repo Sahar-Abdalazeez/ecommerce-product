@@ -9,8 +9,8 @@ const MainGalleryContainer = styled.div`
   flex-direction: column;
 `;
 const MainImage = styled.img`
-  height: 400px;
-  width: 50%;
+  height: 500px;
+  width:90%;
   min-width: 300px;
   border-width: 2px;
   border-radius: 10px;
@@ -21,7 +21,7 @@ const ImageOptions = styled.div`
 display: flex;
 flex-direction:row;
 height:100px;
-width: 50%;
+width: 90%;
 min-width: 300px;
 justify-content:space-between ;
 align-items: center;
@@ -30,7 +30,6 @@ align-items: center;
 const OptionContainer = styled.div`
   width: 80px;
   height:80px;
-  background-color: yellow;
   border:${props => props.isSelected ? `solid 2px  hsl(26, 100%, 55%)` : `solid 2px transparnt`};
   border-radius: 10px;
   overflow: hidden;
@@ -75,16 +74,3 @@ export const Gallery = ({ optionImages }) => {
     </MainGalleryContainer>
   );
 }
-
-
-
-
-{/* <Option >
-
-                <OptionImage
-                src={item}
-                isSelected={index === selectedIndex}
-                onClick={(e) => setMainSource(e.target.src)}
-              /> 
-
-              </Option> */}

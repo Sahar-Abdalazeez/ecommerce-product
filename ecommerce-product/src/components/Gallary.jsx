@@ -4,13 +4,13 @@ import styled from 'styled-components';
 const MainGalleryContainer = styled.div`
   display: flex;
   flex:1;
-  width: 50%;
+  width: 70%;
   height: 100%;
   flex-direction: column;
 `;
 const MainImage = styled.img`
   height: 500px;
-  width:90%;
+  width:70%;
   min-width: 300px;
   border-width: 2px;
   border-radius: 10px;
@@ -21,7 +21,7 @@ const ImageOptions = styled.div`
 display: flex;
 flex-direction:row;
 height:100px;
-width: 90%;
+width: 70%;
 min-width: 300px;
 justify-content:space-between ;
 align-items: center;

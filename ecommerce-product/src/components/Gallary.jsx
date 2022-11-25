@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const MainGalleryContainer = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const MainGalleryContainer = styled.div`
 `;
 const MainImage = styled.img`
   height: 400px;
-  width: 45%;
+  width: 50%;
   min-width: 300px;
   border-width: 2px;
   border-radius: 10px;
@@ -21,7 +21,7 @@ const ImageOptions = styled.div`
 display: flex;
 flex-direction:row;
 height:100px;
-width: 45%;
+width: 50%;
 min-width: 300px;
 justify-content:space-between ;
 align-items: center;
@@ -33,19 +33,17 @@ const OptionContainer = styled.div`
   background-color: yellow;
   border:${props => props.isSelected ? `solid 2px  hsl(26, 100%, 55%)` : `solid 2px transparnt`};
   border-radius: 10px;
-  overflow: hidden
+  overflow: hidden;
+  margin-right: 5px;
 `;
 
 const Option = styled.button`
-  background-color: transparent
+  background-color: transparent;
 `;
 
 const OptionImage = styled.img`
  width: 80px;
   height:80px;
-  /* border-width: 5px;
-    border-radius: 10px;
-  border-color: orange;  */
 `;
 
 export const Gallery = ({ optionImages }) => {
